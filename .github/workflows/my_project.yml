@@ -26,10 +26,9 @@ jobs:
 
       # Deploy API Gateway using AWS CLI
       - name: Deploy API Gateway
-        run: |
-          aws apigateway import-rest-api \
-            --body file://api-definition.yaml \
-            --region ${{ secrets.MY_REGION || 'us-east-1' }}
+        run: | 
+           "https://5ecyb3j068.execute-api.us-east-1.amazonaws.com/my_stage1/my_resource"
+
   test:
     runs-on: ubuntu-latest  # Use an Ubuntu runner
 
