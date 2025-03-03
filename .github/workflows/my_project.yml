@@ -27,7 +27,7 @@ jobs:
       # Deploy API Gateway using AWS CLI
       - name: Deploy API Gateway
         run: | 
-           curl -X GET https://5ecyb3j068.execute-api.***.amazonaws.com/my_stage1/my_resource
+           curl -X GET https://5ecyb3j068.execute-api.us-east-1.amazonaws.com/my_stage1
 
   test:
     runs-on: ubuntu-latest  # Use an Ubuntu runner
